@@ -4,9 +4,22 @@
   "description": "NodeJS interface to INPE Weather Forecast API",
   "main": "index.js",
   "author": "Luiz Fernando",
+  "scripts": {
+    "start": "node index.js",
+    "test": "./node_modules/.bin/mocha"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/lfernando-silva/inpe-weather-api"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bluebird": "^3.5.1",
+    "xml2json": "^0.11.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
 }
