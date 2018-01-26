@@ -1,5 +1,8 @@
 # Changelog
 
+1.0 
+    - First release
+
 0.0.3
 
     - Get airport status
