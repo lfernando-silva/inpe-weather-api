@@ -3,7 +3,7 @@ const chai = require('chai')
 const {getAirportStatus} = require('../lib/index.js')
 const expect = chai.expect
 
-describe('List cities using API', ()=>{
+describe('Get Airport Status using API', ()=>{
     it("Should return an object to code SBBQ", () => {
         return getAirportStatus('SBBQ').then(res => {
             expect(Object.keys(res).length).to.be.greaterThan(0)
