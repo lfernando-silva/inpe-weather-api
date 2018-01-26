@@ -43,7 +43,7 @@ getCities(cityOrPrefix)
 * Otherwise, returns the city based on its code or its name (in portuguese).
 
 getAirportStatus(airportCode)
-* Params: (STRING) The [airport code ("sigla")](http://servicos.cptec.inpe.br/XML/#estacoes-metar) [REQUIRED]
+* Params: (STRING) The [airport code ("sigla")](http://servicos.cptec.inpe.br/XML/#estacoes-metar) REQUIRED
 * Returns: JSON Object
 
 ```javascript
@@ -60,6 +60,11 @@ getAirportStatus(airportCode)
   "visibilidade": "6000"
 }
 ```
+
+getCapitalsForecast()
+* Params: None
+* Returns: JSON array of airportStatus, but only for capitals.
+
 
 ## About language
 * As the API cames from a brazilian governamental service, the default language of response is the brazilian portuguese. However, the code language is english, as the most known libraries.

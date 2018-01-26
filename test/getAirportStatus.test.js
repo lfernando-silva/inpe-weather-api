@@ -19,7 +19,6 @@ describe('List cities using API', ()=>{
 
     it("Should throw error if code is empty", ()=>{
         return getAirportStatus().catch(err => {
-            console.log(err)
             expect(err.response.status).to.be.equal(500)
         })
     })
