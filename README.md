@@ -33,7 +33,7 @@ import * as InpeForecast from 'inpe-weather-api'
 
 ### API
 
-listCities(cityOrPrefix)
+getCities(cityOrPrefix)
 
 * Params: (STRING) The city code, name or prefix.
 * Returns: JSON array.
@@ -41,6 +41,25 @@ listCities(cityOrPrefix)
 * If the the param is empty, the API returns some default cities (no criteria).
 * If the prefix is specified, then the API returns all cities that starts with the prefix. Note this is not a REGEX search.
 * Otherwise, returns the city based on its code or its name (in portuguese).
+
+getAirportStatus(airportCode)
+* Params: (STRING) The [airport code ("sigla")](http://servicos.cptec.inpe.br/XML/#estacoes-metar) [REQUIRED]
+* Returns: JSON Object
+
+```javascript
+{
+  "codigo": "SBBQ",
+  "atualizacao": "26/01/2018 14:00:00",
+  "pressao": "1018",
+  "temperatura": "21",
+  "tempo": "c",
+  "tempo_desc": "Chuvas periódicas",
+  "umidade": "83",
+  "vento_dir": "130",
+  "vento_int": "9",
+  "visibilidade": "6000"
+}
+```
 
 ## About language
 * As the API cames from a brazilian governamental service, the default language of response is the brazilian portuguese. However, the code language is english, as the most known libraries.
