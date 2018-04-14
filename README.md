@@ -67,6 +67,84 @@ getCapitalsForecast()
 * Params: None
 * Returns: JSON array of airportStatus, but only for capitals.
 
+getForecast(cityCode,nextSevenDays,isLatLongPrev, isExtended)
+* Params: (STRING) The city code or slash separated lat,long, (BOOLEAN) true to next seven days, default false,
+(BOOLEAN) true if use lat/long instead city code, (BOOLEAN) true if is a extended forecast.
+* Returns: JSON Object containing an array 'previsao' with the seven or four forecasts.
+* Lat/Long only works to a seven days forecast.
+* Extended query with lat/long is documented, but throws error as the web service response.
+
+```javascript
+//City code
+return getForecast('244',true)
+    .then(response => /*...*/)
+
+//With lat,long
+return getForecast('-22.90/-47.06',true,true)
+    .then(response => /*...*/)
+```
+
+```json
+{
+  "nome": "São Paulo",
+  "uf": "SP",
+  "atualizacao": "2018-04-14",
+  "previsao": [
+    {
+      "dia": "2018-04-14",
+      "tempo": "pt",
+      "maxima": "26",
+      "minima": "18",
+      "iuv": "9.0"
+    },
+    {
+      "dia": "2018-04-15",
+      "tempo": "ci",
+      "maxima": "21",
+      "minima": "17",
+      "iuv": "9.0"
+    },
+    {
+      "dia": "2018-04-16",
+      "tempo": "ci",
+      "maxima": "22",
+      "minima": "17",
+      "iuv": "10.0"
+    },
+    {
+      "dia": "2018-04-17",
+      "tempo": "n",
+      "maxima": "24",
+      "minima": "16",
+      "iuv": "10.0"
+    },
+    {
+      "dia": "2018-04-18",
+      "tempo": "pn",
+      "maxima": "25",
+      "minima": "15",
+      "iuv": "9.0"
+    },
+    {
+      "dia": "2018-04-19",
+      "tempo": "pn",
+      "maxima": "26",
+      "minima": "16",
+      "iuv": "9.0"
+    },
+    {
+      "dia": "2018-04-20",
+      "tempo": "vn",
+      "maxima": "26",
+      "minima": "16",
+      "iuv": "9.0"
+    }
+  ]
+}
+
+```
+
+
 
 ## About language
 * As the API cames from a brazilian governamental service, the default language of response is the brazilian portuguese. However, the code language is english, as the most known libraries.

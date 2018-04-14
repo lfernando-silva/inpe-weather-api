@@ -1,9 +1,10 @@
 {
   "name": "inpe-weather-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeJS interface to INPE Weather Forecast API",
   "main": "index.js",
   "author": "Luiz Fernando",
+  "email": "lfernando-silva@hotmail.com",
   "scripts": {
     "start": "node index.js",
     "test": "mocha test/ --recursive --timeout 15000 --exit"
