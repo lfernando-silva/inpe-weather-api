@@ -1,6 +1,6 @@
 # INPE Weather API
 
-# v.1.0.1
+# v.1.0.2
 
 A unofficial NodeJS interface to brazillian [INPE's](http://servicos.cptec.inpe.br/XML/) Weather Forecast Webservice.
 
@@ -35,7 +35,7 @@ import * as InpeForecast from 'inpe-weather-api'
 
 ### API
 
-getCities(cityOrPrefix)
+getCities(cityOrPrefix*)
 
 * Params: (STRING) The city code, name or prefix.
 * Returns: JSON array.
@@ -44,7 +44,7 @@ getCities(cityOrPrefix)
 * If the prefix is specified, then the API returns all cities that starts with the prefix. Note this is not a REGEX search.
 * Otherwise, returns the city based on its code or its name (in portuguese).
 
-getAirportStatus(airportCode)
+getAirportStatus(airportCode*)
 * Params: (STRING) The [airport code ("sigla")](http://servicos.cptec.inpe.br/XML/#estacoes-metar) REQUIRED
 * Returns: JSON Object
 
@@ -67,7 +67,7 @@ getCapitalsForecast()
 * Params: None
 * Returns: JSON array of airportStatus, but only for capitals.
 
-getForecast(cityCode,nextSevenDays,isLatLongPrev, isExtended)
+getForecast(cityCode*,nextSevenDays,isLatLongPrev, isExtended)
 * Params: (STRING) The city code or slash separated lat,long, (BOOLEAN) true to next seven days, default false,
 (BOOLEAN) true if use lat/long instead city code, (BOOLEAN) true if is a extended forecast.
 * Returns: JSON Object containing an array 'previsao' with the seven or four forecasts.
@@ -144,7 +144,23 @@ return getForecast('-22.90/-47.06',true,true)
 
 ```
 
+getUVIncidence(cityCode*)
+* Params: (STRING) The city code
+* Returns a object containing the ultraviolet waves incidence to a city code.
 
+```json
+{
+  "nome": "São Paulo",
+  "uf": "SP",
+  "data": "14/04/2018",
+  "hora": "12h45",
+  "iuv": "4"
+}
+```
+
+getWavesForecast(cityCode*, day)
+* Params: (STRING) The city code, (STRING) The day code
+* Day code: 0 = today, 1 = tomorrow, 2 = after tomorrow
 
 ## About language
 * As the API cames from a brazilian governamental service, the default language of response is the brazilian portuguese. However, the code language is english, as the most known libraries.
