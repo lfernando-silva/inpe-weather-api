@@ -11,8 +11,6 @@ This service informs the climatic conditions in any city of Brazil.
 * [Node.js](https://nodejs.org/) - 6.x or higher
 
 ## Getting started
-* As the API cames from a brazilian governamental service, the default language of response is the brazilian portuguese. However, the code language is english, as the most known libraries.
-* The INPE's API documentation also is in brazilian portuguese.
 
 ## Install
 
@@ -165,3 +163,13 @@ getWavesForecast(cityCode*, day)
 ## About language
 * As the API cames from a brazilian governamental service, the default language of response is the brazilian portuguese. However, the code language is english, as the most known libraries.
 * The INPE's API documentation also is in brazilian portuguese.
+
+## Donations
+- Feel confortable to make some donations to maintain and improve the project development. Any donations are very welcome!
+
+- **Bitcoin**: bc1qvulnqxftrscmtn073wwx66szlen30tarnuhqlc
+- **Ethereum**: 0xB98D8452002Ef3a6Ca949daAE5846535B174EBcA
+- **Lunes**: 37s3C6u5BNnwU7xtrbYPAwKB9juHskmgbxd
+
+## Bugs and Pull Requests
+- Found a bug? Please, report it in a issue or submit a Pull Request.

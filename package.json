@@ -1,6 +1,6 @@
 {
   "name": "inpe-weather-api",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "NodeJS interface to INPE Weather Forecast API",
   "main": "index.js",
   "author": "Luiz Fernando",
