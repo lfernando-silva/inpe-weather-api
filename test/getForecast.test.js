@@ -17,7 +17,9 @@ describe('Get cities forecast to next 7 or 4 days using API', () => {
             .then(res => {
                 expect(res).to.be.a('object')
                 expect(res.previsao).to.be.an('array')
-                expect(res.previsao.length).to.equal(7)
+                // Depending on the time, may have 6 forecasts instead 7
+                expect(res.previsao.length).greaterThanOrEqual(6)
+                expect(res.previsao.length).lessThanOrEqual(7)
             })
     })
 
@@ -26,7 +28,10 @@ describe('Get cities forecast to next 7 or 4 days using API', () => {
             .then(res => {
                 expect(res).to.be.a('object')
                 expect(res.previsao).to.be.an('array')
-                expect(res.previsao.length).to.equal(7)
+                // Depending on the time, may have 6 forecasts instead 7
+                expect(res.previsao.length).greaterThanOrEqual(6)
+                expect(res.previsao.length).lessThanOrEqual(7)
+
             })
     })
     it('Should throw error code 404 when passing lat/long and not passing isLatLong = true param', () => {

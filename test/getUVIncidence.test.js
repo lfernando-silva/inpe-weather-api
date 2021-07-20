@@ -9,6 +9,9 @@ describe('Get the UV incidence', () => {
             .then(res => {
                 expect(res).to.be.a('object')
                 expect(Number(res.iuv)).to.be.a('number')
+            }).catch(err => {
+                // Seems this endpoint is offline now
+                expect(err.response.status).to.be.equal(500)
             })
     })
 })
