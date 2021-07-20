@@ -1,6 +1,6 @@
 # INPE Weather API
 
-# v.1.0.2
+# v.1.1.0
 
 A unofficial NodeJS interface to brazillian [INPE's](http://servicos.cptec.inpe.br/XML/) Weather Forecast Webservice.
 
