@@ -1,4 +1,4 @@
-import {describe, expect, test} from '@jest/globals';
+import {describe, expect } from '@jest/globals';
 import getAirportStatus from "../src/actions/getAirportStatus";
 
 describe('Airport Status', () => {
