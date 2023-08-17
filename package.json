@@ -1,13 +1,11 @@
 {
   "name": "inpe-weather-api",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "NodeJS interface to INPE Weather Forecast API",
   "main": "index.js",
   "author": "Luiz Fernando",
-  "email": "lfernando-silva@hotmail.com",
   "scripts": {
-    "start": "node index.js",
-    "test": "mocha test/ --recursive --timeout 15000 --exit"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,12 +13,14 @@
   },
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.1",
-    "bluebird": "^3.7.2",
+    "axios": "^1.4.0",
     "xml2json": "^0.12.0"
   },
   "devDependencies": {
-    "chai": "^4.3.4",
-    "mocha": "^9.0.2"
+    "@jest/globals": "^29.6.2",
+    "@types/jest": "^29.5.3",
+    "@types/xml2json": "^0.11.4",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
   }
 }

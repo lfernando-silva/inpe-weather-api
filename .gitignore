@@ -2,5 +2,9 @@
 /.idea
 package-lock.json
 yarn.lock
-app.js
 .vscode/
+
+/src-legacy
+/t-legacy
+app.ts
+/lib/*

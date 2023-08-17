@@ -1,6 +1,6 @@
 # INPE Weather API
 
-# v.1.1.0
+# v.2.0.0
 
 A unofficial NodeJS interface to brazillian [INPE's](http://servicos.cptec.inpe.br/XML/) Weather Forecast Webservice.
 
@@ -8,7 +8,7 @@ This service informs the climatic conditions in any city of Brazil.
 
 ## Pre-requirements:
 
-* [Node.js](https://nodejs.org/) - 6.x or higher
+* [Node.js](https://nodejs.org/) - 12.x or higher
 
 ## Getting started
 
