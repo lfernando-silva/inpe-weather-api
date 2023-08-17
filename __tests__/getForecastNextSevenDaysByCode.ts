@@ -4,8 +4,8 @@ import getForecastNextSevenDaysByCode from "../src/actions/getForecastNextSevenD
 const cityCode = '244';
 const cityName = 'São Paulo';
 
-describe('Forecast: next four days', () => {
-    it('Should get a next 7 days forecast from a city', async () => {
+describe('Forecast: next seven days', () => {
+    it('Should get a next 7 days forecast from a city by code', async () => {
         const status = await getForecastNextSevenDaysByCode(cityCode);
         expect(status.nome).toEqual(cityName);
         expect(status.previsao.length).toBeGreaterThan(4);

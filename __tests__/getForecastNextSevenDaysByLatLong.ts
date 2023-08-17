@@ -7,8 +7,8 @@ const cityCoords = {
 };
 const cityName = 'Campinas';
 
-describe('Forecast: next four days', () => {
-    it('Should get a next 4 days forecast from a city', async () => {
+describe('Forecast: next seven days', () => {
+    it('Should get a next seven days forecast from a city by lat long coords', async () => {
         const status = await getForecastNextSevenDaysByLatLong(cityCoords.lat, cityCoords.long);
         expect(status.nome).toEqual(cityName);
         expect(status.previsao.length).toBeGreaterThan(4);

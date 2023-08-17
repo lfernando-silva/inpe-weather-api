@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Luiz Fernando",
   "scripts": {
-    "test": "jest"
+    "test": "jest --detectOpenHandles --silent"
   },
   "repository": {
     "type": "git",
