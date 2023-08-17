@@ -1,6 +1,5 @@
 // http://servicos.cptec.inpe.br/XML/#req-estacoes-meteorologicas
-
-type TMetarCodes =  'SBTK' |
+type MetarCode =  'SBTK' |
 'SBRB' |
 'SBCZ' |
 'SBMO' |
@@ -117,5 +116,3 @@ type TMetarCodes =  'SBTK' |
 'SBTA' |
 'SBPJ' |
 'SBPN';
-
-export default TMetarCodes;
