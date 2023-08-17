@@ -1,6 +1,7 @@
 // http://servicos.cptec.inpe.br/XML/#res-estacoes-meteorologicas
+// http://servicos.cptec.inpe.br/XML/#res-condicoes-capitais
 
-export default interface IAirportStatus {
+export default interface IForecastStatus {
     codigo: string;
     atualizacao: string;
     pressao: string;

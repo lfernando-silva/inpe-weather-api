@@ -1,5 +1,7 @@
+// http://servicos.cptec.inpe.br/XML/#req-estacoes-meteorologicas
+
 import TMetarCodes from "../@types/TMetarCodes";
-import IAirportStatus from "../interfaces/IAirportStatus";
+import IAirportStatus from "../interfaces/IForecastStatus";
 import api from "../utils/api";
 
 async function getAirportStatus(code: TMetarCodes): Promise<IAirportStatus> {
