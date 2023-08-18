@@ -1,0 +1,1 @@
+type Agitacao = 'Fraco' | 'Moderado' | 'Forte';

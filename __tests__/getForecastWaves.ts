@@ -5,7 +5,6 @@ const CODE = '241';
 const CITY_NAME = 'Rio de Janeiro';
 
 const NOT_A_COAST_CITY_CODE = '244';
-const NOT_A_COAST_CITY_NAME = 'São Paulo';
 
 const getNextDay = (currentDay: string): string => {
     const [day, month, year] = currentDay.split('-').map(e => parseInt(e, 10));

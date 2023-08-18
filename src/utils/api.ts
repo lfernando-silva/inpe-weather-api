@@ -12,6 +12,11 @@ const transformData = (data: any) => {
         throw new Error('Not found');
     }
 
+    if(str.match('Erro 500')){
+        // Internal server error, does not throw code 500
+        throw new Error('Error');
+    }
+
     return JSON.parse(JSONParser.toJson(str));
 }
 
