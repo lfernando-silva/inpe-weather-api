@@ -16,7 +16,8 @@
     },
     "ts-node": {
       "esm": true
-    } ,
+    },
+    "declaration": true,
     "include": ["src/**/*"],
     "typeRoots": [
       "node_modules/@types",

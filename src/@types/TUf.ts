@@ -27,4 +27,4 @@ const ufs = [
     'SE'
 ] as const;
 
-type UF = (typeof ufs)[number];
+export type UF = (typeof ufs)[number];

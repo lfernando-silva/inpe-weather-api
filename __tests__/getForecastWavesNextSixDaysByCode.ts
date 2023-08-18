@@ -16,6 +16,7 @@ describe('Waves Forecast: Next six days', () => {
     it('Should get an error response for a non coast city', async () => {
         try {
             await getForecastWavesNextSixDaysByCode(NOT_A_COAST_CITY_CODE);
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         } catch (err: any){
             expect(err.message).toEqual('Error');
         }

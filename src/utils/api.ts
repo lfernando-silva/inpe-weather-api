@@ -1,20 +1,20 @@
-import axios from 'axios';
+import axios, { AxiosError, AxiosResponse } from 'axios';
 import JSONParser from 'xml2json';
 
 const BASE_URI = 'http://servicos.cptec.inpe.br/XML/';
 const DEFAULT_RESPONSE_TYPE = 'arraybuffer';
 
-const transformData = (data: any) => {
-    const str = data.toString('binary');
+const transformData = (data: AxiosResponse) => {
+    const str = data.toString();
 
     if(str.match('não encontrada')){
         // Not found, does not throw code 404
-        throw new Error('Not found');
+        throw new AxiosError('Not found');
     }
 
     if(str.match('Erro 500')){
         // Internal server error, does not throw code 500
-        throw new Error('Error');
+        throw new AxiosError('Error');
     }
 
     return JSON.parse(JSONParser.toJson(str));

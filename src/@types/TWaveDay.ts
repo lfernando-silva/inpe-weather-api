@@ -1,1 +1,1 @@
-type WaveDay = '0' | '1' | '2';
+export type WaveDay = '0' | '1' | '2';

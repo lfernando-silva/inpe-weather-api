@@ -1,4 +1,4 @@
-type WeatherCondition = 'ec'|	
+export type WeatherCondition = 'ec'|	
 'ci'|	
 'c'|	
 'in'|	

@@ -1,1 +1,1 @@
-type Agitacao = 'Fraco' | 'Moderado' | 'Forte';
+export type Agitacao = 'Fraco' | 'Moderado' | 'Forte';
