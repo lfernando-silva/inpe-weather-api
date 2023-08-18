@@ -1,3 +1,4 @@
+import { Agitacao } from "../@types/TAgitacao";
 import ICity from "./ICity";
 
 export interface IWavesPrevisao {

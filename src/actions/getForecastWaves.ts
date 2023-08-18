@@ -1,5 +1,6 @@
 // http://servicos.cptec.inpe.br/XML/#req-previsao-ondas
 
+import { WaveDay } from "../@types/TWaveDay";
 import IWavesForecast from "../interfaces/IWavesForecast";
 import api from "../utils/api";
 

@@ -1,5 +1,6 @@
 // http://servicos.cptec.inpe.br/XML/#req-estacoes-meteorologicas
 
+import { MetarCode } from "../@types/TMetarCode";
 import IAirportStatus from "../interfaces/IForecastStatus";
 import api from "../utils/api";
 

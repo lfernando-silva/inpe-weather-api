@@ -1,5 +1,6 @@
 // http://servicos.cptec.inpe.br/XML/#res-previsao-4-dias
 
+import { WeatherCondition } from "../@types/TWeatherConditions";
 import ICity from "./ICity";
 
 // http://servicos.cptec.inpe.br/XML/#res-previsao-7-dias
