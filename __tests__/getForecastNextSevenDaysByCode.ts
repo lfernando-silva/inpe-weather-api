@@ -1,4 +1,4 @@
-import {describe, expect } from '@jest/globals';
+import { describe, expect } from '@jest/globals';
 import { getForecastNextSevenDaysByCode } from '../src';
 
 const cityCode = '244';

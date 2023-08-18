@@ -3,7 +3,6 @@
   "version": "2.0.0",
   "description": "NodeJS interface to INPE Weather Forecast API",
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
   "author": "Luiz Fernando",
   "scripts": {
     "test": "jest --runInBand --detectOpenHandles --forceExit",

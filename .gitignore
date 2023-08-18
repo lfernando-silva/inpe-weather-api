@@ -5,4 +5,5 @@ yarn.lock
 .vscode/
 
 app.ts
+app.js
 /lib/*
