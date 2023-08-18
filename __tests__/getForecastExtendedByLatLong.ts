@@ -1,5 +1,5 @@
 import {describe, expect } from '@jest/globals';
-import getForecastExtendedByLatLong from "../src/actions/getForecastExtendedByLatLong";
+import { getForecastExtendedByLatLong } from '../src';
 
 const cityCoords = {
     lat: '-22.90',

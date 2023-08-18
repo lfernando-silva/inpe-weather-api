@@ -1,5 +1,5 @@
 import {describe, expect } from '@jest/globals';
-import getForecastWaves from "../src/actions/getForecastWaves";
+import { getForecastWaves } from '../src';
 
 const CODE = '241';
 const CITY_NAME = 'Rio de Janeiro';

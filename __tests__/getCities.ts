@@ -1,5 +1,5 @@
 import {describe, expect } from '@jest/globals';
-import getCities from "../src/actions/getCities";
+import { getCities } from '../src';
 
 describe('List cities', () => {
     it('Should get a list of cities', async () => {

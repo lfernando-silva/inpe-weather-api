@@ -1,5 +1,5 @@
 import {describe, expect } from '@jest/globals';
-import getForecastExtendedByCode from "../src/actions/getForecastExtendedByCode";
+import { getForecastExtendedByCode } from '../src';
 
 const cityCode = '244';
 const cityName = 'São Paulo';

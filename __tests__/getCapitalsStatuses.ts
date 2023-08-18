@@ -1,5 +1,5 @@
 import {describe, expect } from '@jest/globals';
-import getCapitalsStatuses from "../src/actions/getCapitalsStatuses";
+import { getCapitalsStatuses } from '../src';;
 
 const NUMBER_OF_CAPITALS = 26;
 

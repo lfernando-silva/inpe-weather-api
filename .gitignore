@@ -4,7 +4,5 @@ package-lock.json
 yarn.lock
 .vscode/
 
-/src-legacy
-/t-legacy
 app.ts
 /lib/*
