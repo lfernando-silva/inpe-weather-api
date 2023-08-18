@@ -4,4 +4,5 @@ export default interface ICity {
     nome: string;
     uf: UF;
     id: string;
+    atualizacao?: string;
 }
