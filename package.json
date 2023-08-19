@@ -2,13 +2,16 @@
   "name": "inpe-weather-api",
   "version": "2.0.0",
   "description": "NodeJS interface to INPE Weather Forecast API",
-  "main": "lib/index.js",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
   "author": "Luiz Fernando",
   "scripts": {
     "test": "jest --runInBand --detectOpenHandles --forceExit",
+    "prebuild": "rimraf ./build",
     "build": "tsc",
     "eslint": "npx eslint .",
-    "eslint:fix": "npx eslint . --fix"
+    "eslint:fix": "npx eslint . --fix",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,8 @@
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
     "eslint": "^8.47.0",
+    "jest": "^29.6.2",
+    "rimraf": "^3.0.2",
     "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
   }

@@ -6,4 +6,4 @@ yarn.lock
 
 app.ts
 app.js
-/lib/*
+dist

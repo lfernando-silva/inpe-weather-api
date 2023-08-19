@@ -3,16 +3,15 @@
     "display": "Node 18",
   
     "compilerOptions": {
-      "lib": ["es2022"],
-      "module": "commonjs",
-      "target": "es2022",
-  
+      "target": "es6",
+      "module": "CommonJS",
       "strict": true,
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
-  
-      "outDir": "lib"
+      "outDir": "./dist",
+      "declaration": true,
+      "moduleResolution": "node"
     },
     "ts-node": {
       "esm": true
