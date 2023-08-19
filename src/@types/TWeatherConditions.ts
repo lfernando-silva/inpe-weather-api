@@ -1,3 +1,4 @@
+// http://servicos.cptec.inpe.br/XML/#condicoes-tempo
 export type WeatherCondition = 'ec'|	
 'ci'|	
 'c'|	
