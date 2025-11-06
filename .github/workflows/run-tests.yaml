@@ -1,0 +1,25 @@
+name: Run Tests
+
+on: pull_request
+
+jobs:
+  test:
+    name: "🧪 Unit Tests (Node.js: ${{ matrix.node-version }})"
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      matrix:
+        node-version: ["18.15.0"]
+    steps:
+      - uses: actions/setup-node@v4
+        name: ⚙️ Setup Node
+        with:
+          node-version: 18.15.0
+      - name: ⏬ Checkout
+        uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: |
+          npm install
+      - name: 🧪 Run Tests
+        run: |
+          npm test
