@@ -1,6 +1,10 @@
 name: Run Tests
 
-on: pull_request
+# on: pull_request
+on:
+  push:
+    branches:
+      - feature/gha
 
 jobs:
   test:
